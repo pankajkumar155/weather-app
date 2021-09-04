@@ -1,5 +1,5 @@
 const weatherApi={
-    key:"35514ba957fbdb22b823a98d0da17e53",
+    key:"4926b71d9cbbea189c1a30867f5731f2",
     baseUrl:"https://api.openweathermap.org/data/2.5/weather",
 }
 const searchInputBox=document.getElementById('input');
