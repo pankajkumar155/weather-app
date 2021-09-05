@@ -2,28 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="app-main">
-        <div class="search-box">
-            <input type="text" id="input" class="input" placeholder="Enter the name of city">
-        </div>
-        <div class="weather-body">
-            <div class="location">
-                <div class="city" id="city">Delhi , IND</div>
-                <div class="date" id="date">4 september (Saturday), 2021</div>
-            </div>
-            <div class="status">
-                <div class="temp" id="temp">27&deg;C</div>
-                <div class="min-max" id="min-max">18&deg;C (min) / 31&deg;C (max)</div>
-                <div class="weather" id="weather">Clouds</div>
-            </div>
+    <div class="main-container">
+        <div class="container top">
+            <h1>Weather App</h1>
+            <form action="" onsubmit="return false">
+                <input type="text" class="search" placeholder="Search by city name">
+                <button type="submit" class="btn">Submit</button>
+                <p class="error"></p>
+            </form>
+            <section>
+                <div class="container">
+                    <div class="icon">
+                        <img src="" alt="" class="weather-icon">
+                    </div>
+                    <div class="location">
+                        <div class="city">HIMACHAL PRADESH , IND</div>
+                        <div class="date">Sunday, SEP 05 2021</div>
+                    </div>
+                    <div class="current">
+                        <div class="temp">Temp: 25 <span>°C</span></div>
+                        <div class="weather">Weather: Sunny</div>
+                        <div class="temp-range">Temp Range: 10°C / 15°C</div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+    
+
+    <script src="script.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
