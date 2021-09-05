@@ -2,39 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel = "icon" href = "imgoo.png" type = "image/x-icon">
 </head>
 <body>
-    <div class="main-container">
-        <div class="container top">
-            <h1>Weather App</h1>
-            <form action="" onsubmit="return false">
-                <input type="text" class="search" placeholder="Search by city name">
-                <button type="submit" class="btn">Submit</button>
-                <p class="error"></p>
-            </form>
-            <section>
-                <div class="container">
-                    <div class="icon">
-                        <img src="" alt="" class="weather-icon">
-                    </div>
-                    <div class="location">
-                        <div class="city">HIMACHAL PRADESH , IND</div>
-                        <div class="date">Sunday, SEP 05 2021</div>
-                    </div>
-                    <div class="current">
-                        <div class="temp">Temp: 25 <span>°C</span></div>
-                        <div class="weather">Weather: Sunny</div>
-                        <div class="temp-range">Temp Range: 10°C / 15°C</div>
-                    </div>
-                </div>
-            </section>
+    <div class="app-main">
+        <div class="searchInputBox">
+            <input type="text" id="inputBox" class="inputBox" placeholder="Enter City..." autocomplete="off">
+        </div>
+        <div class="weatherBody">
+            <div class="locationDetails">
+                <div class="city" id="city"></div>
+                <div class="date" id="date"></div>
+            </div>
+            <div class="weatherStatus">
+                <div class="temp" id="temp"></div>
+                <div class="min-max" id="min-max"></div>
+                <div class="weather" id="weather"></div>
+                <div class="img"></div>
+            </div>
         </div>
     </div>
-    
-
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
